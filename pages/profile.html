@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOVIA - Profile</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+
+<body class="login-body">
+
+    <main class="profile-page">
+
+        <!-- Top Header Navigation Bar -->
+        <header class="profile-top-bar">
+            <div class="brand-pill-glass">
+                <a href="home.html" class="brand-link">JOVIA</a>
+                <a href="nashmy.html" class="avatar-link" title="Nashmy">
+                    <img class="header-avatar" src="../assets/nashmy.png" alt="Nashmy Avatar">
+                </a>
+            </div>
+
+            <!-- Global Language Dropdown -->
+            <div class="language-dropdown-wrapper">
+                <button class="lang-pill-glass" id="langDropdownBtn" type="button">
+                    <svg class="globe-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="2" y1="12" x2="22" y2="12"></line>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10z"></path>
+                    </svg>
+                    <span id="currentLang">English</span>
+                </button>
+
+                <ul class="language-menu" id="langMenu">
+                    <li><button type="button" class="lang-option" data-lang="English">English</button></li>
+                    <li><button type="button" class="lang-option" data-lang="العربية">العربية</button></li>
+                    <li><button type="button" class="lang-option" data-lang="Español">Español</button></li>
+                    <li><button type="button" class="lang-option" data-lang="Français">Français</button></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- Profile Information Section -->
+        <section class="profile-user-card">
+            <div class="user-meta-info">
+                <img src="../assets/pfp.webp" alt="Profile Avatar" class="profile-user-avatar"
+                    onerror="this.src='../assets/images/Image 22.jpeg'">
+                <div class="user-text-details">
+                    <h1 class="user-display-name" id="userDisplayName">Loading...</h1>
+                    <p class="user-email-address" id="userEmailAddress">Loading...</p>
+                </div>
+            </div>
+
+            <div class="profile-quick-actions">
+                <a href="saved.html" class="action-circle-btn" aria-label="Saved Items">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                    </svg>
+                </a>
+                <button type="button" class="action-circle-btn has-unread" aria-label="Notifications">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                        <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                    </svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- Your Next Trip Section -->
+        <section class="profile-section">
+            <h2 class="profile-section-title">Your Next Trip</h2>
+
+            <div class="upcoming-trips-grid">
+                <!-- Trip Card 1 (Brown Edge Accent) -->
+                <article class="upcoming-trip-card accent-brown">
+                    <div class="trip-card-header">
+                        <div class="trip-title-group">
+                            <h3>Amman & Nature Escape</h3>
+                            <p class="trip-subtitle">Amman, Petra, and Dana Reserve</p>
+                        </div>
+                        <span class="trip-status-tag">Confirmed • Coming Soon</span>
+                    </div>
+
+                    <div class="trip-tags-row">
+                        <span class="info-pill calendar-pill">
+                            📅 15 – 18 Oct 2026
+                        </span>
+                        <span class="info-pill time-pill">
+                            ⌛ 3 Days
+                        </span>
+                        <span class="info-pill budget-pill">
+                            💰 180 JOD
+                        </span>
+                    </div>
+
+                    <a href="" class="view-plan-dark-btn">→ View Plan Details</a>
+                </article>
+
+                <!-- Trip Card 2 (Turquoise Edge Accent) -->
+                <article class="upcoming-trip-card accent-teal">
+                    <div class="trip-card-header">
+                        <div class="trip-title-group">
+                            <h3>Northern Wonders & Hills</h3>
+                            <p class="trip-subtitle">Ajloun, Irbid, and Umm Qais viewpoint</p>
+                        </div>
+                    </div>
+
+                    <div class="trip-tags-row">
+                        <span class="info-pill calendar-pill">
+                            📅 24–26 Oct 2026
+                        </span>
+                        <span class="info-pill time-pill">
+                            ⌛ 2 Days
+                        </span>
+                        <span class="info-pill budget-pill">
+                            💰 95 JOD
+                        </span>
+                    </div>
+
+                    <a href="" class="view-plan-dark-btn">→ View Plan Details</a>
+                </article>
+            </div>
+        </section>
+
+        <!-- Past Trip Log Section -->
+        <section class="profile-section">
+            <h2 class="profile-section-title">Past Trip Log</h2>
+            <div class="past-trip-list">
+                <!-- 1. جرش وعجلون: قلعة وآثار -->
+                <article class="past-trip-item">
+                    <div class="past-trip-icon icon-castle">
+                        <i class="fa-solid fa-chess-rook"></i>
+                    </div>
+                    <div class="past-trip-info">
+                        <h3>Jerash & Ajloun Day Trip</h3>
+                        <p>Completed • May 2026</p>
+                    </div>
+                    <span class="arrow-right">›</span>
+                </article>
+
+                <!-- 2. البحر الميت: أمواج واسترخاء -->
+                <article class="past-trip-item">
+                    <div class="past-trip-icon icon-sea">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <div class="past-trip-info">
+                        <h3>Dead Sea Relax & Spa</h3>
+                        <p>Completed • January 2026</p>
+                    </div>
+                    <span class="arrow-right">›</span>
+                </article>
+
+                <!-- 3. العقبة: غوص وبحر -->
+                <article class="past-trip-item">
+                    <div class="past-trip-icon icon-diving">
+                        <i class="fa-solid fa-fish-fins"></i>
+                    </div>
+                    <div class="past-trip-info">
+                        <h3>Aqaba Red Sea Diving</h3>
+                        <p>Completed • November 2025</p>
+                    </div>
+                    <span class="arrow-right">›</span>
+                </article>
+
+                <!-- 4. وادي رم: نجوم وتخييم صحراوي -->
+                <article class="past-trip-item">
+                    <div class="past-trip-icon icon-stars">
+                        <i class="fa-solid fa-campground"></i>
+                    </div>
+                    <div class="past-trip-info">
+                        <h3>Wadi Rum Stargazing</h3>
+                        <p>Completed • September 2025</p>
+                    </div>
+                    <span class="arrow-right">›</span>
+                </article>
+            </div>
+
+            <div class="trips-buttons-group">
+                <button class="show-more-dark-btn" type="button" id="showMoreTripsBtn">Show More</button>
+                <button class="show-more-dark-btn" type="button" id="budgetTripsBtn" onclick="window.location.href='Budget&ExperiencePlanner.html'">Budget</button>
+            </div>
+        </section>
+
+        <!-- Footer Actions -->
+        <div class="profile-footer-actions">
+            <a href="#" class="logout-link-btn" id="logoutBtn">Log Out</a>
+            <a href="#" class="help-support-link">Help & Support</a>
+        </div>
+
+        <!-- Fixed Bottom Navigation Bar -->
+        <nav class="bottom-navigation">
+            <a href="profile.html" class="nav-item active">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile</span>
+            </a>
+
+            <a href="home.html" class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Home</span>
+            </a>
+
+            <a href="smart-map.html" class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon>
+                    <line x1="8" y1="2" x2="8" y2="18"></line>
+                    <line x1="16" y1="6" x2="16" y2="22"></line>
+                </svg>
+                <span>Map</span>
+            </a>
+
+            <a href="jordan1.html" class="nav-item">
+                <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                    <polygon
+                        points="12,2 14.1,7.2 19.8,6.1 17.5,11.3 21.8,15 16.1,16.2 15.2,21.9 12,17.2 8.8,21.9 7.9,16.2 2.2,15 6.5,11.3 4.2,6.1 9.9,7.2">
+                    </polygon>
+                </svg>
+                <span>Know JORDAN</span>
+            </a>
+        </nav>
+
+    </main>
+
+    <!-- JS Module -->
+    <script type="module" src="../js/profile.js"></script>
+
+</body>
+
+</html>

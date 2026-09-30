@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOVIA - Travel & Experiences</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Onboarding CSS -->
+    <link rel="stylesheet" href="../css/onboarding.css">
+</head>
+<body>
+
+    <main class="onboarding-screen">
+        
+        <!-- الهيدر العلوي -->
+        <header class="onboarding-header">
+            
+            <div class="brand-group-glass">
+                <span class="logo-text">JOVIA</span>
+                <a href="nashmy.html" class="nashmy-mini-avatar" title="Ask Nashmy">
+                    <img src="../assets/nashmy.png" alt="Nashmy">
+                </a>
+            </div>
+
+            <!-- قائمة اللغة المنسدلة -->
+            <div class="lang-dropdown-container">
+                <button type="button" class="lang-pill-btn" id="langDropdownBtn">
+                    <i class="fa-solid fa-globe"></i>
+                    <span id="currentLang">English</span>
+                    <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
+                </button>
+                <ul class="lang-dropdown-menu" id="langMenu">
+                    <li data-lang="English">English</li>
+                    <li data-lang="العربية">العربية</li>
+                </ul>
+            </div>
+
+        </header>
+
+        <!-- المحتوى المركزي: الشعار والعبارة التعريفية والكروت -->
+        <section class="onboarding-center">
+            <div class="brand-container">
+                <h1 class="brand-title">JOVIA</h1>
+                <p class="brand-subtitle">TRAVEL &amp; EXPERIENCES</p>
+                <span class="brand-tagline">MORE THAN A TRIP</span>
+            </div>
+
+            <!-- بطاقات الميزات -->
+            <div class="features-container">
+                <div class="feature-box active" id="feature-1">
+                    <i class="fa-solid fa-wallet"></i>
+                    <span>Plan your trip based on budget</span>
+                </div>
+                <div class="feature-box" id="feature-2">
+                    <i class="fa-solid fa-compass"></i>
+                    <span>Explore hidden gems</span>
+                </div>
+                <div class="feature-box" id="feature-3">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span>Experience the real Jordan</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- زر البدء بالأسفل -->
+        <footer class="footer-action">
+            <button type="button" class="btn-get-started" id="getStartedBtn">
+                Get Started
+            </button>
+        </footer>
+
+    </main>
+
+    <!-- Onboarding JS -->
+    <script src="../js/onboarding.js"></script>
+</body>
+</html>

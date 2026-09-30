@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+functions/node_modules/
+
+# Environment and Secret files
+.env
+.env.*
+.secret.local
+functions/.env
+functions/.env.*
+functions/.secret.local
+.runtimeconfig.json
+
+# Firebase Cache & Emulators
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
+# OS Files
+.DS_Store
+Thumbs.db
